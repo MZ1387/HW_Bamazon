@@ -61,7 +61,7 @@ var productInquirer = function() {
         type: "input",
         message: "What's the 'ID' of the item you would like to buy?",
         validate: function(value) {
-            if (isNaN(value) === false && (value <= itemLength)) {
+            if (isNaN(value) === false && (value <= itemLength) && (value != 0)) {
                 return true;
             }
             return false;
