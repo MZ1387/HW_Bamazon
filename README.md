@@ -38,25 +38,6 @@ In this activity, I created an Amazon-like storefront with MySQL. The app takes 
    * Once the update goes through, show the customer the total cost of their purchase.
 
 
-## What Each Command Should Do
-
-1. `node cards.js basic`
-
-   * This will ask you questions from previously created basic cards.
-
-2. `node cards.js basic [amount of cards]`
-
-      * This will allow you to create a new set of basic cards and then run the newly created cards.
-
-3. `node cards.js cloze`
-
-   * This will ask you questions from previously created cloze cards.
-
-4. `node cards.js cloze [amount of cards]`
-
-   * This will allow you to create a new set of cloze cards and then run the newly created cards.
-
-
 ## Concepts Implemented
 
 - Working with MySQL database and Node packages
