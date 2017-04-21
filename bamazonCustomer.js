@@ -5,6 +5,7 @@ require('console.table');
 
 // users total bill
 var totalCheckout = 0;
+var itemLength = 0;
 
 // connect to mysql
 var connection = mysql.createConnection({
@@ -47,6 +48,7 @@ function productsTable() {
         console.log("                        WELCOME TO BAMAZON                           ");
         console.log("---------------------------------------------------------------------");
         console.table(res);
+        itemLength = res.length;
         productInquirer();
     });
 }
@@ -59,7 +61,7 @@ var productInquirer = function() {
         type: "input",
         message: "What's the 'ID' of the item you would like to buy?",
         validate: function(value) {
-            if (isNaN(value) === false) {
+            if (isNaN(value) === false && (value <= itemLength)) {
                 return true;
             }
             return false;
