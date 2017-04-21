@@ -86,8 +86,6 @@ var productInquirer = function() {
         // select product from table using id
         connection.query("SELECT * FROM products WHERE id=" + answer.productId, function(err, res) {
             if (err) throw err;
-            console.log(res);
-            if (res != []) {
 
                 availableStock = res[0].stock_quantity;
 
@@ -95,7 +93,6 @@ var productInquirer = function() {
 
                     newStock = availableStock - quantityCount;
 
-                    console.log("Processing Order...");
                     console.log("---------------------------------------------------------------------");
                     updateInventory(newStock, answer.productId);
                     totalCheckout += (answer.quantity * res[0].price);
@@ -108,13 +105,6 @@ var productInquirer = function() {
                     console.log("---------------------------------------------------------------------");
                     startShopping();
                 }
-
-            } else {
-                console.log("---------------------------------------------------------------------");
-                console.log("Product was not found. Please enter a valid 'id'");
-                console.log("---------------------------------------------------------------------");
-                startShopping();
-            }
 
         });
 

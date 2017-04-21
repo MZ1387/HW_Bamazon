@@ -49,3 +49,8 @@ In this activity, I created an Amazon-like storefront with MySQL. The app takes 
 - If user choses to enter Bamazon they are prompted to select a product and quantity they wish to buy.
 - If the product the user selected has sufficient inventory then the sale is completed and the user is given a total amount.
 - If the product the user selected has insufficient inventory then the sale is cancelled and the user is prompted to revise their order or leave the store.
+
+
+###
+
+<img width="1000" alt="screen shot 2017-04-20 at 11 00 05 pm" src="https://cloud.githubusercontent.com/assets/22460545/25264665/3230ea72-261d-11e7-9e9c-f8d2920e715f.png">

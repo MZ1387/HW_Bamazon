@@ -1,0 +1,14 @@
+"id","product_name","department_name","price","stock_quantity"
+1,"The Alchemist","Books",10,100
+2,"Mastery","Books",20,50
+3,"The Search for Everything","Music",10,1000
+4,"Khaki Joggers","Clothing",60,100
+5,"Continuum","Music",10,25
+6,"White Tee Shirt","Clothing",25,100
+7,"Guitar","Instruments",1500,10
+8,"Banjo","Instruments",300,10
+9,"Keyboard","Instruments",500,20
+10,"Heater","Appliances",40,100
+11,"I Love Lucy DVD Set","Media",100,50
+12,"Macbook Pro 15'","Computers",3000,100
+13,"Seinfeld DVD Set","Media",100,1000
